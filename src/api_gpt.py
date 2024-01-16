@@ -1,5 +1,5 @@
 from openai import OpenAI
-
+import os
 
 def get_respuesta_GPT(prompt, OPENAI_API_KEY): 
   client = OpenAI(api_key=OPENAI_API_KEY)
@@ -40,18 +40,21 @@ def show_get_respuesta_GPT(chat_history, prompt, temp, OPENAI_API_KEY):
     max_tokens=255,
     messages=chat_history
   ,
-  stream=False
+  stream=True
 )
-  full_r_content = chat_completion.choices[0].message.content
   mensaje = []
   # print while writing
-  #for chunk in chat_completion:
-  #  c_msg = chunk.choices[0].delta
-  #  mensaje.append(c_msg)
-  #  full_r_content = ''.join([(m.content)for m in mensaje])
-  #  print(full_r_content)
-  #  print('\033[H\033]J', end='') # clean screen 
-  #  print(chat_completion)
+  for chunk in chat_completion:
+    c_msg = chunk.choices[0].delta.content
+    mensaje.append(c_msg)
+    full_r_content = ''.join(str(i) for i in mensaje if i is not None) 
+    #print('\033[H\033]J', end='') # clean screen no me funciona xd
+    #print(chr(27) + "[2J")
+    print(full_r_content)
+    print("\033[H\033[J", end="")
+
+
+
   print(chat_history)
   print(full_r_content)
   # aniadimos la respuesta al historial
