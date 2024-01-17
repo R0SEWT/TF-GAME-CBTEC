@@ -32,7 +32,7 @@ def config_prompt(user):
     - Puntaje: <Puntaje>
     - Dificultad: <Dificultad>
     - Pregunta: <Pregunta o caso>
-    - Alternativa: <Alternativas>
+    - Alternativa: <Alternativas>E
 
     Tras seleccionar una alternativa inmediatamente empieza otro turno.¡Empecemos con la primera pregunta!
 '''
