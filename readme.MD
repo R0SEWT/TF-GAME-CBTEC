@@ -1,9 +1,10 @@
 # Juego de Selección de Equipos de Protección Personal
 
-Este proyecto es un juego interactivo basado en texto que te permite aprender sobre la selección de equipos de protección personal para diferentes actividades de riesgo. El juego simula la experiencia de un trabajador de una empresa de distribución eléctrica enfrentándose a diversas situaciones laborales.
+Este proyecto es un juego interactivo basado en texto que te permite aprender sobre la selección de equipos de protección personal (EPP) para diferentes actividades de riesgo. El juego simula la experiencia de un trabajador en una empresa de distribución eléctrica enfrentándose a diversas situaciones laborales.
 
-## Ingeniering Prompting
-Este proyecto es el resultado del trabajo final del curso de Ingeniering. Para concientrizar sobre el adecuado uso de EPP para diferentes actividades de riesgo.
+## Ingenierías del Juego
+
+Este proyecto es el resultado del trabajo de curso. Su objetivo es concientizar sobre el uso adecuado de EPP en diferentes actividades de riesgo.
 
 ## Requisitos
 
@@ -12,6 +13,7 @@ Asegúrate de tener instaladas las siguientes bibliotecas en tu entorno de Pytho
 ```bash
 pip install python-decouple
 pip install pandas
+
 ``` 
 
 ## Configuración
